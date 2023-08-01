@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,12 +95,27 @@
             left: 50vw;
             height: 30px;
             position: absolute;
-            z-index: -1;
+            z-index: -2;
             background: rgb(245,169,184);
 			background: -moz-linear-gradient(90deg, rgba(245,169,184,1) 0%, rgba(250,108,91,1) 100%);
 			background: -webkit-linear-gradient(90deg, rgba(245,169,184,1) 0%, rgba(250,108,91,1) 100%);
 			background: linear-gradient(90deg, rgba(245,169,184,1) 0%, rgba(250,108,91,1) 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5a9b8",endColorstr="#fa6c5b",GradientType=1);
+        }
+        
+         .underEye {
+        	width: 140px;
+			height: 140px;
+            border: 5px solid red;
+            border-right: 5px solid orange;
+			background-color: red;
+			box-shadow: inset 0 0 60px 0 rgba(0, 0, 0, 0.5);
+			border-radius: 100%;
+			position: absolute;
+			perspective: 500px;
+			overflow: hidden;
+			transform: translate(-50%, -50%);
+            z-index: -1;
         }
 
 		#triangle {
@@ -277,12 +291,14 @@
     	<div class="title" id="two">Step 2: TRANSDUCTION</div>
         <div class="title" id="three" style="display: none">Step 3: PATHWAY</div>
 		<div class="eye">
-          <div class="iris anim"></div>
+        	<div class="iris anim">
+          		<div class="lightEnter"></div>
+        	</div>
 		</div>
+        <div class="underEye"></div>
         <div class="nerve"></div>
         <button class="eyeInside">See Inside</button>
     </div>
-    <div id="3d-graph"></div>
 </body>
 <script>
 	//mouse tracking
@@ -359,6 +375,12 @@
             $(".nerve").css("width", "55vw");
         }
     });
+    
+    $(".eyeInside").click(function() {
+    	$(".eye").css("background-color", "rgba(255,239,226,0.5)");
+        $(this).text(function(i, text) {
+        	return $("input").is(":visible") ? "See Inside" : "Reset";
+      	});
+    });
 </script>
-
 </html>
