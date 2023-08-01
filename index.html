@@ -15,9 +15,9 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-            text-shadow: 0 0 6px #fff, 0 0 6px #fff;
-        	-webkit-text-stroke: 2px #ffffff94;
-    		letter-spacing: 4px;
+			text-shadow: 0 0 6px #fff, 0 0 6px #fff;
+			-webkit-text-stroke: 2px #ffffff94;
+			letter-spacing: 4px;
 		}
 
 		body {
@@ -31,70 +31,97 @@
 			position: fixed;
 			top: 50%;
 			transform: translateY(-50%);
-            z-index: 2;
+			z-index: 2;
 		}
-        
-        .title {
-            position: fixed;
+
+		.title {
+			position: fixed;
 			top: 10%;
-  			left: 50%;
-  			transform: translate(-50%);
+			left: 50%;
+			transform: translate(-50%);
 			color: #fff;
 			font-size: 65px;
 			z-index: 3;
-            text-align: center;
+			text-align: center;
 		}
-        
-        .description {
-        	position: fixed;
+
+		.marginThings {
+			position: relative;
 			color: #fff;
-			font-size: 25px;
-            height: 100%;
-            width: 100%;
+			font-size: 20px;
+			text-align: center;
+			text-shadow: none;
+			-webkit-text-stroke: none;
+			margin: 20px 100px;
+		}
+
+		.description {
+			position: fixed;
+			height: 100%;
+			width: 100%;
 			z-index: 3;
-            text-align: center;
-            text-shadow: none;
-        	-webkit-text-stroke: none;
-            display: none;
-            background: rgba(56, 56, 56, 0.46);
-			border-radius: 16px;
+			display: none;
+			background: rgba(56, 56, 56, 0.46);
+			border-radius: 20px;
 			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 			backdrop-filter: blur(8.2px);
 			-webkit-backdrop-filter: blur(8.2px);
 			border: 1px solid rgba(56, 56, 56, 0.3);
-            overflow: scroll;
-            
-        }
-        
-        .descriptionTime {
-        	z-index: 3;
-        }
-        
-        
-        
-        .eyeInside {
-        	top: auto;
-            bottom: 20%;
-        }
-        button {
-        	position: fixed;
-            top: 2%;
-            left: 50%;
-            transform: translate(-50%);
-            cursor: pointer;
-            background-color: #000000;
-        	color: #fff;
-        	padding: 10px;
-        	border-radius: 25px;
-        	font-size: 20px;
-        	letter-spacing: 4px;
-        }
-        
-        button:hover, h1 {
-    		text-shadow: 0 0 6px #fff, 0 0 6px #fff;
-        	-webkit-text-stroke: 2px #ffffff94;
-        	transition: 0.4s;
-    	}
+			overflow: scroll;
+		}
+
+		.descriptionTime {
+			z-index: 3;
+		}
+
+		.closeIcon {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 45px;
+			height: 45px;
+			background: none;
+			font-size: 2em;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-bottom-left-radius: 25px;
+			cursor: pointer;
+			z-index: 1;
+		}
+
+		.closeIcon:hover {
+			transition: 0.5s;
+			text-shadow: 0 0 6px #fff, 0 0 6px #fff;
+			-webkit-text-stroke: 2px #ffffff94;
+		}
+
+		.eyeInside {
+			top: auto;
+			bottom: 20%;
+		}
+
+		button {
+			position: fixed;
+			top: 2%;
+			left: 50%;
+			transform: translate(-50%);
+			cursor: pointer;
+			background-color: #000000;
+			color: #fff;
+			padding: 10px;
+			border-radius: 25px;
+			font-size: 20px;
+			letter-spacing: 4px;
+		}
+
+		button:hover,
+		h1 {
+			text-shadow: 0 0 6px #fff, 0 0 6px #fff;
+			-webkit-text-stroke: 2px #ffffff94;
+			transition: 0.4s;
+		}
 
 		i {
 			color: white;
@@ -102,21 +129,18 @@
 			padding: 0 20px;
 			cursor: pointer;
 		}
-        
-        .bx-chevrons-left {
-        	visibility: hidden;
-        }
-        
-        .brainTime {
-        	display: none;
-        }
-        
-        
-        
-        .eyeTime {
-        	opacity: 0;
-            
-        }
+
+		.bx-chevrons-left {
+			visibility: hidden;
+		}
+
+		.brainTime {
+			display: none;
+		}
+
+		.eyeTime {
+			opacity: 0;
+		}
 
 		.eye {
 			width: 150px;
@@ -138,56 +162,55 @@
 			position: fixed;
 			transform: rotateX(-50deg) rotateY(15deg) translateZ(68px) scale(0.6);
 			background: -moz-radial-gradient(ellipse at center, #000000 13%, #cedbe9 15%, #cedbe9 15%, #b1d1e0 25%, #85b5e5 44%, #6199c7 51%, #fffcf9 53%, rgba(255, 252, 249, 0.4) 56%, transparent 71%);
-  			background: -webkit-radial-gradient(ellipse at center, #000000 13%, #cedbe9 15%, #cedbe9 15%, #b1d1e0 25%, #85b5e5 44%, #6199c7 51%, #fffcf9 53%, rgba(255, 252, 249, 0.4) 56%, transparent 71%);
-  			background: radial-gradient(ellipse at center, #000000 13%, #cedbe9 15%, #cedbe9 15%, #b1d1e0 25%, #85b5e5 44%, #6199c7 51%, #fffcf9 53%, rgba(255, 252, 249, 0.4) 56%, transparent 71%);
+			background: -webkit-radial-gradient(ellipse at center, #000000 13%, #cedbe9 15%, #cedbe9 15%, #b1d1e0 25%, #85b5e5 44%, #6199c7 51%, #fffcf9 53%, rgba(255, 252, 249, 0.4) 56%, transparent 71%);
+			background: radial-gradient(ellipse at center, #000000 13%, #cedbe9 15%, #cedbe9 15%, #b1d1e0 25%, #85b5e5 44%, #6199c7 51%, #fffcf9 53%, rgba(255, 252, 249, 0.4) 56%, transparent 71%);
 			border-radius: 100%;
 		}
-        
-        .nerve {
-        	width: 55vw;
-            left: 50vw;
-            height: 30px;
-            position: fixed;
-            z-index: -2;
-            background: rgb(245,169,184);
-			background: -moz-linear-gradient(90deg, rgba(245,169,184,1) 0%, rgba(250,108,91,1) 100%);
-			background: -webkit-linear-gradient(90deg, rgba(245,169,184,1) 0%, rgba(250,108,91,1) 100%);
-			background: linear-gradient(90deg, rgba(245,169,184,1) 0%, rgba(250,108,91,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5a9b8",endColorstr="#fa6c5b",GradientType=1);
-        }
-        
-        .pulse {
-        	animation-name: pulseAnim;
-  			animation-duration: 1.5s;
-  			animation-iteration-count: infinite;
-        }
-        
+
+		.nerve {
+			width: 55vw;
+			left: 50vw;
+			height: 30px;
+			position: fixed;
+			z-index: -2;
+			background: rgb(245, 169, 184);
+			background: -moz-linear-gradient(90deg, rgba(245, 169, 184, 1) 0%, rgba(250, 108, 91, 1) 100%);
+			background: -webkit-linear-gradient(90deg, rgba(245, 169, 184, 1) 0%, rgba(250, 108, 91, 1) 100%);
+			background: linear-gradient(90deg, rgba(245, 169, 184, 1) 0%, rgba(250, 108, 91, 1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5a9b8", endColorstr="#fa6c5b", GradientType=1);
+		}
+
+		.pulse {
+			animation-name: pulseAnim;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite;
+		}
+
 		@keyframes pulseAnim {
 			0% {
-  				box-shadow: none;
-            	-webkit-box-shadow: none;
-  				-moz-box-shadow: none;
+				box-shadow: none;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
 			}
-            
+
 			50% {
 				box-shadow: 0 0 12px #fff, 0 0 12px #fff;
-            	-webkit-box-shadow: 0 0 12px #fff, 0 0 12px #fff;
-            	-moz-box-shadow: 0 0 12px #fff, 0 0 12px #fff;
+				-webkit-box-shadow: 0 0 12px #fff, 0 0 12px #fff;
+				-moz-box-shadow: 0 0 12px #fff, 0 0 12px #fff;
 			}
-            
+
 			100% {
 				box-shadow: none;
-            	-webkit-box-shadow: none;
-  				-moz-box-shadow: none;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
 			}
 		}
 
-        
-         .underEye {
-        	width: 140px;
+		.underEye {
+			width: 140px;
 			height: 140px;
-            border: 5px solid red;
-            border-right: 5px solid orange;
+			border: 5px solid red;
+			border-right: 5px solid orange;
 			background-color: red;
 			box-shadow: inset 0 0 60px 0 rgba(0, 0, 0, 0.5);
 			border-radius: 100%;
@@ -195,8 +218,8 @@
 			perspective: 500px;
 			overflow: hidden;
 			transform: translate(-50%, -50%);
-            z-index: -1;
-        }
+			z-index: -1;
+		}
 
 		#triangle {
 			border-style: solid;
@@ -209,7 +232,6 @@
 			transform: translate(-50%, -50%);
 			width: 0;
 			z-index: 1;
-            
 		}
 
 		#triangle-inner {
@@ -224,7 +246,6 @@
 			transform: translate(-50%, -50%);
 			width: 0;
 			z-index: 1;
-            
 		}
 
 		#refracted-light>.ray {
@@ -277,9 +298,9 @@
 			transform: rotate(-10deg);
 			transform-origin: top right;
 			width: 55vw;
-            box-shadow: 0 0 24px #fff, 0 0 24px #fff;
-           	-webkit-box-shadow: 0 0 24px #fff, 0 0 24px #fff;
-            -moz-box-shadow: 0 0 24px #fff, 0 0 24px #fff;
+			box-shadow: 0 0 24px #fff, 0 0 24px #fff;
+			-webkit-box-shadow: 0 0 24px #fff, 0 0 24px #fff;
+			-moz-box-shadow: 0 0 24px #fff, 0 0 24px #fff;
 		}
 
 		#rainbow>.ray {
@@ -293,8 +314,8 @@
 		#rainbow>.ray.red {
 			background-color: red;
 			box-shadow: 0 0 1vmin 1vmin red;
-            -webkit-box-shadow: 0 0 1vmin 1vmin red;
-            -moz-box-shadow: 0 0 1vmin 1vmin red;
+			-webkit-box-shadow: 0 0 1vmin 1vmin red;
+			-moz-box-shadow: 0 0 1vmin 1vmin red;
 			top: calc(50vh - 6vmin);
 			transform: rotate(8deg);
 		}
@@ -302,8 +323,8 @@
 		#rainbow>.ray.orange {
 			background-color: orange;
 			box-shadow: 0 0 1vmin 1vmin orange;
-            -webkit-box-shadow: 0 0 1vmin 1vmin orange;
-            -moz-box-shadow: 0 0 1vmin 1vmin orange;
+			-webkit-box-shadow: 0 0 1vmin 1vmin orange;
+			-moz-box-shadow: 0 0 1vmin 1vmin orange;
 			top: calc(50vh - 5.5vmin);
 			transform: rotate(9deg);
 		}
@@ -311,8 +332,8 @@
 		#rainbow>.ray.yellow {
 			background-color: yellow;
 			box-shadow: 0 0 1vmin 1vmin yellow;
-            -webkit-box-shadow: 0 0 1vmin 1vmin yellow;
-            -moz-box-shadow: 0 0 1vmin 1vmin yellow;
+			-webkit-box-shadow: 0 0 1vmin 1vmin yellow;
+			-moz-box-shadow: 0 0 1vmin 1vmin yellow;
 			top: calc(50vh - 5vmin);
 			transform: rotate(10deg);
 		}
@@ -320,8 +341,8 @@
 		#rainbow>.ray.green {
 			background-color: yellowgreen;
 			box-shadow: 0 0 1vmin 1vmin yellowgreen;
-            -webkit-box-shadow: 0 0 1vmin 1vmin yellowgreen;
-            -moz-box-shadow: 0 0 1vmin 1vmin yellowgreen;
+			-webkit-box-shadow: 0 0 1vmin 1vmin yellowgreen;
+			-moz-box-shadow: 0 0 1vmin 1vmin yellowgreen;
 			top: calc(50vh - 4.5vmin);
 			transform: rotate(11deg);
 		}
@@ -329,8 +350,8 @@
 		#rainbow>.ray.blue {
 			background-color: skyblue;
 			box-shadow: 0 0 1vmin 1vmin skyblue;
-            -webkit-box-shadow: 0 0 1vmin 1vmin skyblue;
-            -moz-box-shadow: 0 0 1vmin 1vmin skyblue;
+			-webkit-box-shadow: 0 0 1vmin 1vmin skyblue;
+			-moz-box-shadow: 0 0 1vmin 1vmin skyblue;
 			top: calc(50vh - 4vmin);
 			transform: rotate(12deg);
 		}
@@ -338,8 +359,8 @@
 		#rainbow>.ray.violet {
 			background-color: violet;
 			box-shadow: 0 0 1vmin 1vmin violet;
-            -webkit-box-shadow: 0 0 1vmin 1vmin violet;
-            -moz-box-shadow: 0 0 1vmin 1vmin violet;
+			-webkit-box-shadow: 0 0 1vmin 1vmin violet;
+			-moz-box-shadow: 0 0 1vmin 1vmin violet;
 			top: calc(50vh - 3.5vmin);
 			transform: rotate(13deg);
 		}
@@ -347,8 +368,8 @@
 		#rainbow>.ray.purple {
 			background-color: mediumpurple;
 			box-shadow: 0 0 1vmin 1vmin mediumpurple;
-            -webkit-box-shadow: 0 0 1vmin 1vmin mediumpurple;
-            -moz-box-shadow: 0 0 1vmin 1vmin mediumpurple;
+			-webkit-box-shadow: 0 0 1vmin 1vmin mediumpurple;
+			-moz-box-shadow: 0 0 1vmin 1vmin mediumpurple;
 			height: 0.25vmin;
 			top: calc(50vh - 3vmin);
 			transform: rotate(14deg);
@@ -356,15 +377,15 @@
 	</style>
 </head>
 
-<body>	
-    <div class="arrowTime">
+<body>
+	<div class="arrowTime">
 		<i class='bx bx-chevrons-left'></i>
 		<i class='bx bx-chevrons-right'></i>
 	</div>
-    <div class="lightTime">
-    	<button class="descriptionTime" id="step-one-btn">SEE DESCRIPTION</button>
-    	<div class="title" id="step-one-title">Step 1:<br>ENERGY</div>
-        
+
+	<div class="lightTime">
+		<button class="descriptionTime" id="step-one-btn">SEE DESCRIPTION</button>
+		<div class="title" id="step-one-title">Step 1:<br>ENERGY</div>
 		<div id="triangle"></div>
 		<div id="triangle-inner"></div>
 		<div id="refracted-light">
@@ -386,41 +407,61 @@
 			<div class="ray violet"></div>
 			<div class="ray purple"></div>
 		</div>
-    </div>
-    <div class="eyeTime">
-    	<button class="descriptionTime" id="step-two-btn">SEE DESCRIPTION</button>
-    	<div class="title" id="step-two-title">Step 2:<br> TRANSDUCTION</div>
-        
-        <div class="title" id="step-three-title" style="display: none">Step 3:<br>PATHWAY</div>
-        <button id="step-three-btn" style="display: none">SEE DESCRIPTION</button>
-        
+	</div>
+
+	<div class="eyeTime">
+		<button class="descriptionTime" id="step-two-btn">SEE DESCRIPTION</button>
+		<div class="title" id="step-two-title">Step 2:<br> TRANSDUCTION</div>
+
+		<div class="title" id="step-three-title" style="display: none">Step 3:<br>PATHWAY</div>
+		<button id="step-three-btn" style="display: none">SEE DESCRIPTION</button>
 		<div class="eye">
-        	<div class="iris anim">
-          		<div class="lightEnter"></div>
-        	</div>
+			<div class="iris anim">
+				<div class="lightEnter"></div>
+			</div>
 		</div>
-        <div class="underEye"></div>
-        <div class="nerve"></div>
-        <button class="eyeInside">REVEAL RETINA</button>
-    </div>
-    <div class="brainTime">
-    	<div class="title" id="step-four-title">Step 4:<br> INTERPRETATION</div>
-        <button id="step-four-btn">SEE DESCRIPTION</button>
-        
-    </div>
-    <div class="description" id="step-one-desc">The process of vision begins with the presence of external energy in the form of light. Light is a narrow band of electromagnetic radiation that can be conceptualized as a wave or a stream of photons. It consists of different wavelengths, and when it enters our eyes, it acts as the physical stimulus for vision. Not all light is visible to the human eye; visible light represents only a small portion of the electromagnetic spectrum.</div>
-    <div class="description" id="step-two-desc">The light enters the eye through the cornea. It then passes through the aqueous humor, the iris, the pupil (the dark circular opening at the center of the iris), and the lens. The lens helps focus light on the retina by changing its shape. The retina is a light-sensitive membrane in the back of the eye that contains photoreceptors (rods and cones) responsible for transducing light energy into neural signals. Photoreceptors, which are cells in the retina, convert light energy into neural energy. The retina also includes the fovea, the area with the highest acuity, and the optic disc, where retinal ganglion cells leave the eye via the optic nerve and where blood vessels enter the eye.</div>
-        <div class="description" id="step-three-desc">The electrical signals generated by the photoreceptors are processed by other retinal cells and are then sent through the optic nerve, a bundle of nerve fibers, from each eye. The optic nerves carry these signals towards the brain.  Just before reaching the brain, some of the optic nerve fibers cross over at a structure called the optic chiasm. This crossing allows for the integration of visual information from both eyes. From the optic chiasm, the visual information is relayed to various brain areas that process and interpret the signals. The optic nerve fibers synapse at the Lateral Geniculate Nucleus (LGN) in the thalamus. The LGN acts as a relay station, processing and filtering visual information before transmitting it further. Neural signals carrying information from the left visual field go to the right hemisphere of the brain, while signals carrying information from the right visual field go to the left hemisphere. The LGN is organized into different layers, including the Parvocellular layers (top four layers) that carry information about fine spatial detail of objects at rest from P ganglion cells and the Magnocellular layers (bottom two layers) that carry information about dynamic visual properties of motion from M ganglion cells.</div>
-        <div class="description" id="step-four-desc">
-      The processed visual information from the LGN is then sent to the primary visual cortex, also known as V1 or the striate cortex. This area, located in the occipital lobe at the back of the brain, plays a crucial role in early visual processing, such as detecting edges, orientations, and simple features in the visual scene. From V1, the visual information is relayed to higher visual association areas, such as V2, V3, and beyond. These areas process more complex visual features, combining information from different parts of the visual field. The inferior temporal cortex is involved in object recognition. It processes complex visual stimuli, allowing the recognition and identification of objects, faces, and other visual patterns.
+		<div class="underEye"></div>
+		<div class="nerve"></div>
+		<button class="eyeInside">REVEAL RETINA</button>
+	</div>
+	<div class="brainTime">
+		<div class="title" id="step-four-title">Step 4:<br> INTERPRETATION</div>
+		<button id="step-four-btn">SEE DESCRIPTION</button>
+	</div>
+	<div class="description" id="step-one-desc">
+		<span class="closeIcon">
+			<i class='bx bx-x' onclick="closeDesc()"></i>
+		</span>
+		<div class="marginThings">
+			The process of vision begins with the presence of external energy in the form of light. Light is a narrow band of electromagnetic radiation that can be conceptualized as a wave or a stream of photons. It consists of different wavelengths, and when it enters our eyes, it acts as the physical stimulus for vision. Not all light is visible to the human eye; visible light represents only a small portion of the electromagnetic spectrum.
+		</div>
+	</div>
+	<div class="description" id="step-two-desc">
+		<span class="closeIcon">
+			<i class='bx bx-x' onclick="closeDesc()"></i>
+		</span>
+		<div class="marginThings">
+			The light enters the eye through the cornea. It then passes through the aqueous humor, the iris, the pupil (the dark circular opening at the center of the iris), and the lens. The lens helps focus light on the retina by changing its shape. The retina is a light-sensitive membrane in the back of the eye that contains photoreceptors (rods and cones) responsible for transducing light energy into neural signals. Photoreceptors, which are cells in the retina, convert light energy into neural energy. The retina also includes the fovea, the area with the highest acuity, and the optic disc, where retinal ganglion cells leave the eye via the optic nerve (a bundle of nerve fibers), and where blood vessels enter the eye. The electrical signals generated by the photoreceptors are processed by other retinal cells and then sent through the optic nerve from each eye.
+		</div>
+	</div>
+	<div class="description" id="step-three-desc">
+		<span class="closeIcon">
+			<i class='bx bx-x' onclick="closeDesc()"></i>
+		</span>
+		<div class="marginThings">
+			The optic nerves carry visual signals towards the brain. Before reaching the brain, some fibers of the optic nerve cross over at the optic chiasm, integrating visual information from both eyes. From there, the visual information is relayed to various brain areas for processing and interpretation. The optic nerve fibers synapse at the Lateral Geniculate Nucleus (LGN) in the thalamus, acting as a relay station that filters and processes visual information. Neural signals from the left visual field go to the right hemisphere of the brain, and signals from the right visual field go to the left hemisphere. The LGN has different layers, including Parvocellular layers (top four layers) carrying information about fine spatial details from P ganglion cells, and Magnocellular layers (bottom two layers) carrying information about dynamic visual properties of motion from M ganglion cells.</div>
+	</div>
+	<div class="description" id="step-four-desc">
+		<span class="closeIcon">
+			<i class='bx bx-x' onclick="closeDesc()"></i>
+		</span>
+		<div class="marginThings">
+			The visual information from the LGN goes to the primary visual cortex (V1) also known as the striate cortex, in the occipital lobe. It plays a crucial role in early visual processing, such as detecting edges, orientations, and simple features in the visual scene. From V1, the visual information is relayed to higher visual association areas, such as V2, V3, and beyond. These areas process more complex visual features, combining information from different parts of the visual field. The inferior temporal cortex is involved in object recognition. It processes complex visual stimuli, allowing the recognition and identification of objects, faces, and other visual patterns.<br><br>
 
-The interpretation of visual information involves two main processes: bottom-up processing and top-down processing.
+			Interpreting visual information involves two processes: bottom-up and top-down processing. Bottom-up processing analyzes individual features and elements, recognizing them as objects. For example, when looking at a face, we identify eyes, nose, and mouth to recognize the face. Top-down processing is driven by memory, knowledge, and expectations. It helps us interpret visual information based on past experiences, allowing recognition of familiar objects even with incomplete visual data.<br><br>
 
-      Bottom-up processing is data-driven and starts with the raw visual input. It involves the analysis of individual features and elements of the visual scene, which are then combined and recognized as objects. For example, when you look at a face, bottom-up processing involves identifying individual features like eyes, nose, and mouth, and combining them to recognize the face.
-
-      Top-down processing is conceptually driven and influenced by higher-level cognitive processes, such as memory, knowledge, and expectations. It allows us to interpret visual information based on our past experiences and knowledge. For example, if you see a partial image of a familiar object, top-down processing might help you recognize the whole object even with incomplete visual information.
-
-By combining bottom-up and top-down processing, our brain enables us to understand and recognize objects, scenes, and the visual world around us. This process is continuously occurring as we interact with our environment and make sense of the visual stimuli we encounter.</div>
+			Combining bottom-up and top-down processing enables our brain to understand and recognize objects and scenes in the visual world. This continuous process occurs as we interact with our environment and make sense of visual stimuli.</div>
+	</div>
 </body>
 <script>
 	//mouse tracking
@@ -452,8 +493,7 @@ By combining bottom-up and top-down processing, our brain enables us to understa
 	}
 	window.ontouchmove = window.ontouchstart = e => window.onmousemove(e.touches[0]);
 	/////////
-    
-    $(".bx-chevrons-left").mouseenter(function() {
+	$(".bx-chevrons-left").mouseenter(function() {
 		$(this).addClass("bx-fade-left");
 	});
 	$(".bx-chevrons-left").mouseleave(function() {
@@ -465,106 +505,104 @@ By combining bottom-up and top-down processing, our brain enables us to understa
 	$(".bx-chevrons-right").mouseleave(function() {
 		$(this).removeClass("bx-fade-right");
 	});
-    
-$(".bx-chevrons-right").click(function() {
-    if ($(".lightTime").is(":visible")) {
-        $(".lightTime").hide();
-        $(".bx-chevrons-left").css("visibility", "visible");
-        $(".eyeTime").css("opacity", "1");
-    } else if ($("#step-two-title").is(":visible")) {
-        $(".eyeInside").hide();
-        $("#step-two-title, #step-two-btn").hide();
-        $("#step-three-title, #step-three-btn").show();
-        $("html, body").css("justify-content", "flex-start");
-        $(".nerve").css("left", "0");
-        $(".nerve").css("width", "100vw");
-        $(".eye").css("background-color", "#ffefe2");
-        $(".nerve").addClass("pulse");
-    } else if ($("#step-three-title").is(":visible")) {
-        $(".eyeTime").hide();
-        $(".brainTime").show();
-        $(".bx-chevrons-right").css("visibility", "hidden");
-    }
-});
+	$(".bx-chevrons-right").click(function() {
+		if ($(".lightTime").is(":visible")) {
+			$(".lightTime").hide();
+			$(".bx-chevrons-left").css("visibility", "visible");
+			$(".eyeTime").css("opacity", "1");
+		} else if ($("#step-two-title").is(":visible")) {
+			$(".eyeInside").hide();
+			$("#step-two-title, #step-two-btn").hide();
+			$("#step-three-title, #step-three-btn").show();
+			$("html, body").css("justify-content", "flex-start");
+			$(".nerve").css("left", "0");
+			$(".nerve").css("width", "100vw");
+			$(".eye").css("background-color", "#ffefe2");
+			$(".nerve").addClass("pulse");
+		} else if ($("#step-three-title").is(":visible")) {
+			$(".eyeTime").hide();
+			$(".brainTime").show();
+			$(".bx-chevrons-right").css("visibility", "hidden");
+		}
+	});
+	$(".bx-chevrons-left").click(function() {
+		const eyeTimeOpacity = parseFloat($(".eyeTime").css("opacity"));
+		if (eyeTimeOpacity === 1 && $("#step-two-title").is(":visible")) {
+			$(".lightTime").show();
+			$(".bx-chevrons-left").css("visibility", "hidden");
+			$(".eyeTime").css("opacity", "0");
+		} else if (eyeTimeOpacity === 1 && $("#step-three-title").is(":visible")) {
+			$("#step-three-title, #step-three-btn").hide();
+			$("#step-two-title, #step-two-btn").show();
+			$(".eyeInside").show();
+			$("html, body").css("justify-content", "center");
+			$(".nerve").css("left", "50vw");
+			$(".nerve").css("width", "55vw");
+			$(".nerve").removeClass("pulse");
+		} else if ($(".brainTime").is(":visible")) {
+			$(".brainTime").hide();
+			$(".eyeTime").show();
+			$(".bx-chevrons-right").css("visibility", "visible");
+		}
+	});
+	$(".eyeInside").click(function() {
+		const eyeBgColor = $(".eye").css("background-color");
+		const targetBgColor = "rgba(255, 239, 226, 0.5)";
+		if (eyeBgColor === targetBgColor) {
+			// Reset the background color to its original value
+			$(".eye").css("background-color", "#ffefe2");
+			$(this).text("See Inside");
+		} else {
+			// Change the background color to targetBgColor
+			$(".eye").css("background-color", targetBgColor);
+			$(this).text("Reset");
+		}
+	});
+	$("#step-one-btn").click(function() {
+		var stepOneDesc = $("#step-one-desc");
+		if (stepOneDesc.is(":visible")) {
+			// If the description is visible, hide it
+			stepOneDesc.hide();
+			$(this).text("SEE DESCRIPTION");
+		} else {
+			// If the description is hidden, show it
+			stepOneDesc.css("display", "flex");
+			stepOneDesc.css("justify-content", "center");
+			stepOneDesc.css("align-items", "center");
+		}
+	});
+	$("#step-two-btn").click(function() {
+		var stepTwoDesc = $("#step-two-desc");
+		if (stepTwoDesc.is(":visible")) {
+			// If the description is visible, hide it
+			stepTwoDesc.hide();
+			$(this).text("SEE DESCRIPTION");
+		} else {
+			// If the description is hidden, show it
+			stepTwoDesc.css("display", "flex");
+			stepTwoDesc.css("justify-content", "center");
+			stepTwoDesc.css("align-items", "center");
+		}
+	});
+	$("#step-three-btn").click(function() {
+		var stepThreeDesc = $("#step-three-desc");
+		if (stepThreeDesc.is(":visible")) {
+			// If the description is visible, hide it
+			stepThreeDesc.hide();
+			$(this).text("SEE DESCRIPTION");
+		} else {
+			// If the description is hidden, show it
+			stepThreeDesc.css("display", "flex");
+			stepThreeDesc.css("justify-content", "center");
+			stepThreeDesc.css("align-items", "center");
+		}
+	});
+	$("#step-four-btn").click(function() {
+		$("#step-four-desc").toggle();
+	});
 
-$(".bx-chevrons-left").click(function() {
-    const eyeTimeOpacity = parseFloat($(".eyeTime").css("opacity"));
-    if (eyeTimeOpacity === 1 && $("#step-two-title").is(":visible")) {
-        $(".lightTime").show();
-        $(".bx-chevrons-left").css("visibility", "hidden");
-        $(".eyeTime").css("opacity", "0");
-    } else if (eyeTimeOpacity === 1 && $("#step-three-title").is(":visible")) {
-        $("#step-three-title, #step-three-btn").hide();
-        $("#step-two-title, #step-two-btn").show();
-        $(".eyeInside").show();
-        $("html, body").css("justify-content", "center");
-        $(".nerve").css("left", "50vw");
-        $(".nerve").css("width", "55vw");
-        $(".nerve").removeClass("pulse");
-    } else if ($(".brainTime").is(":visible")) {
-        $(".brainTime").hide();
-        $(".eyeTime").show();
-        $(".bx-chevrons-right").css("visibility", "visible");
-    }
-});
-
-    
-    $(".eyeInside").click(function() {
-        const eyeBgColor = $(".eye").css("background-color");
-        const targetBgColor = "rgba(255, 239, 226, 0.5)";
-
-        if (eyeBgColor === targetBgColor) {
-            // Reset the background color to its original value
-            $(".eye").css("background-color", "#ffefe2");
-            $(this).text("See Inside");
-        } else {
-            // Change the background color to targetBgColor
-            $(".eye").css("background-color", targetBgColor);
-            $(this).text("Reset");
-        }
-    });
-    
-    $("#step-one-btn").click(function() {
-    	    var stepOneDesc = $("#step-one-desc");
-    if (stepOneDesc.is(":visible")) {
-        // If the description is visible, hide it
-        stepOneDesc.hide();
-        $(this).text("SEE DESCRIPTION");
-    } else {
-        // If the description is hidden, show it
-        stepOneDesc.css("display", "flex");
-        stepOneDesc.css("justify-content", "center");
-        stepOneDesc.css("align-items", "center");
-    }
-    });
-$("#step-two-btn").click(function() {
-    var stepTwoDesc = $("#step-two-desc");
-    if (stepTwoDesc.is(":visible")) {
-        // If the description is visible, hide it
-        stepTwoDesc.hide();
-        $(this).text("SEE DESCRIPTION");
-    } else {
-        // If the description is hidden, show it
-        stepTwoDesc.css("display", "flex");
-        stepTwoDesc.css("justify-content", "center");
-        stepTwoDesc.css("align-items", "center");
-    }
-});
-$("#step-three-btn").click(function() {
-    var stepThreeDesc = $("#step-three-desc");
-    if (stepThreeDesc.is(":visible")) {
-        // If the description is visible, hide it
-        stepThreeDesc.hide();
-        $(this).text("SEE DESCRIPTION");
-    } else {
-        // If the description is hidden, show it
-        stepThreeDesc.css("display", "flex");
-        stepThreeDesc.css("justify-content", "center");
-        stepThreeDesc.css("align-items", "center");
-    }
-});
-    $("#step-four-btn").click(function() {
-    	$("#step-four-desc").toggle();
-    });
+	function closeDesc() {
+		$(".description").hide();
+	}
 </script>
 </html>
